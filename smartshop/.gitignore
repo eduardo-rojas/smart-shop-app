@@ -1,0 +1,18 @@
+# Django #
+smartshop/*.log
+smartshop/*.pot
+smartshop/*.pyc
+smartshop/__pycache__
+smartshop/db.sqlite3
+smartshop/media
+smartshop/*/migrations
+
+# Visual Studio Code # 
+.vscode/* 
+!.vscode/settings.json 
+!.vscode/tasks.json 
+!.vscode/launch.json 
+!.vscode/extensions.json 
+.history
+
+venv
