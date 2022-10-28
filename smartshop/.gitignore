@@ -15,4 +15,4 @@ smartshop/*/migrations
 !.vscode/extensions.json 
 .history
 
-venv
+..venv
