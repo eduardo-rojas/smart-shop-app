@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "shop.apps.ShopConfig",
     'cart.apps.CartConfig',
+    'orders.apps.OrdersConfig',
+    #'payment.apps.PaymentConfig', 
 ]
 
 MIDDLEWARE = [
@@ -129,3 +131,10 @@ MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / 'media'
 
 CART_SESSION_ID = 'cart'
+
+
+# Stripe settings
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51MfZ2NA9XbgWakYtA0vyn6T4PWSepnOfn9KjgdHQ7rLyhdLPWS7XGAPPK0KjiQGYuJVk2Cb0kVvJbDmG63Y5I1cN00ygGS6Hg4' # Publishable key
+STRIPE_SECRET_KEY = 'sk_test_51MfZ2NA9XbgWakYt8JwqMVGSkCBvnrBrV8nJlxqjeSzaP5rECEe4HXu7kMpx9kcmtWpMTnwuEczkCXN7hLmryfzF003WhmIG53'
+# Secret key
+STRIPE_API_VERSION = '2022-08-01'
