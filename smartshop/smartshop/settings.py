@@ -137,3 +137,6 @@ STRIPE_PUBLISHABLE_KEY = 'pk_test_51MfZ2NA9XbgWakYtA0vyn6T4PWSepnOfn9KjgdHQ7rLyh
 STRIPE_SECRET_KEY = 'sk_test_51MfZ2NA9XbgWakYt8JwqMVGSkCBvnrBrV8nJlxqjeSzaP5rECEe4HXu7kMpx9kcmtWpMTnwuEczkCXN7hLmryfzF003WhmIG53'
 # Secret key
 STRIPE_API_VERSION = '2022-08-01'
+
+# Send confirmation e-mail in console
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
