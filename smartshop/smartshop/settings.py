@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+from stripe import stripe_publishable_key, stripe_secret_key, stripe_api_version
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,7 +40,7 @@ INSTALLED_APPS = [
     "shop.apps.ShopConfig",
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
-    #'payment.apps.PaymentConfig', 
+    'payment.apps.PaymentConfig', 
 ]
 
 MIDDLEWARE = [
@@ -133,10 +134,10 @@ CART_SESSION_ID = 'cart'
 
 
 # Stripe settings
-STRIPE_PUBLISHABLE_KEY = 'pk_test_51MfZ2NA9XbgWakYtA0vyn6T4PWSepnOfn9KjgdHQ7rLyhdLPWS7XGAPPK0KjiQGYuJVk2Cb0kVvJbDmG63Y5I1cN00ygGS6Hg4' # Publishable key
-STRIPE_SECRET_KEY = 'sk_test_51MfZ2NA9XbgWakYt8JwqMVGSkCBvnrBrV8nJlxqjeSzaP5rECEe4HXu7kMpx9kcmtWpMTnwuEczkCXN7hLmryfzF003WhmIG53'
+STRIPE_PUBLISHABLE_KEY = stripe_publishable_key # Publishable key
+STRIPE_SECRET_KEY = stripe_secret_key
 # Secret key
-STRIPE_API_VERSION = '2022-08-01'
+STRIPE_API_VERSION = stripe_api_version
 
 # Send confirmation e-mail in console
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
