@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+from smartshop.stripe_keys import *
 from pathlib import Path
-from stripe import stripe_publishable_key, stripe_secret_key, stripe_api_version
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -136,8 +136,10 @@ CART_SESSION_ID = 'cart'
 # Stripe settings
 STRIPE_PUBLISHABLE_KEY = stripe_publishable_key # Publishable key
 STRIPE_SECRET_KEY = stripe_secret_key
-# Secret key
 STRIPE_API_VERSION = stripe_api_version
+STRIPE_WEBHOOK_SECRET = endpoint_secret
+
+
 
 # Send confirmation e-mail in console
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 

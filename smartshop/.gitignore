@@ -1,5 +1,5 @@
 # Django #
-smartshop/stripe.py
+smartshop/stripe_keys.py
 smartshop/*.log
 smartshop/*.pot
 smartshop/*.pyc
