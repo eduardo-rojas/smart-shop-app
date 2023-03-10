@@ -143,3 +143,6 @@ STRIPE_WEBHOOK_SECRET = endpoint_secret
 
 # Send confirmation e-mail in console
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
+
+# static files
+STATIC_ROOT = BASE_DIR / 'static'
