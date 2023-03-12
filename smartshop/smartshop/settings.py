@@ -147,3 +147,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # static files
 STATIC_ROOT = BASE_DIR / 'static'
+
+# Redis settings 
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1
