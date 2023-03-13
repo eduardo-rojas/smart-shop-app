@@ -19,8 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 #: smartshop/settings.py:117
 msgid "English"
-msgstr ""
+msgstr "Inglés"
 
 #: smartshop/settings.py:118
 msgid "Spanish"
-msgstr ""
+msgstr "Español"

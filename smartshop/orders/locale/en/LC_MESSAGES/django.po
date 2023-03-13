@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-13 00:37-0700\n"
+"POT-Creation-Date: 2023-03-13 00:45-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: smartshop/settings.py:117
-msgid "English"
+#: orders/models.py:13
+msgid "first name"
 msgstr ""
 
-#: smartshop/settings.py:118
-msgid "Spanish"
+#: orders/models.py:14
+msgid "last name"
+msgstr ""
+
+#: orders/models.py:15
+msgid "e-mail"
+msgstr ""
+
+#: orders/models.py:16
+msgid "address"
+msgstr ""
+
+#: orders/models.py:17
+msgid "postal code"
+msgstr ""
+
+#: orders/models.py:18
+msgid "city"
 msgstr ""
